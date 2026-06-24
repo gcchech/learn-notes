@@ -1,0 +1,22 @@
+{
+  "name": "learn-notes",
+  "version": "1.0.0",
+  "description": "Java 技术博客 - 记录学习路上的点滴收获",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:update-package": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.14",
+    "@vuepress/plugin-search": "2.0.0-rc.14",
+    "vuepress": "2.0.0-rc.14",
+    "vuepress-theme-hope": "2.0.0-rc.52"
+  },
+  "dependencies": {
+    "mermaid": "^11.15.0"
+  }
+}

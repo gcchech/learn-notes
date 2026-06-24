@@ -1,0 +1,49 @@
+// 自定义样式变量
+:root {
+  // 主题色 - 使用 Java 风格橙色
+  --theme-color: #e76f00;
+  --theme-color-light: #f0a040;
+  --theme-color-dark: #c05000;
+}
+
+// 代码块增强
+div[class*="language-"] {
+  // 代码块圆角
+  border-radius: 8px;
+
+  // 代码块标题栏
+  .highlight-lines {
+    // 高亮行背景色
+    .highlighted {
+      background-color: rgba(255, 193, 7, 0.15);
+    }
+  }
+}
+
+// 自定义提示框配色
+.hint-container {
+  &.tip {
+    background: #f3f5f7;
+    border-left-color: #42b983;
+  }
+  &.warning {
+    background: #fff7d0;
+    border-left-color: #e7c000;
+  }
+  &.danger {
+    background: #ffe6e6;
+    border-left-color: #c00;
+  }
+}
+
+// 表格样式优化
+table {
+  font-size: 0.9em;
+}
+
+// 移动端侧边栏改进
+@media (max-width: 719px) {
+  .theme-container .sidebar {
+    font-size: 0.95em;
+  }
+}
