@@ -8,8 +8,6 @@
 
 ### 1.1 Java 的定位
 
-1995 年，Sun Microsystems 发布了 Java 1.0。最初它是为电视机顶盒设计的语言，却意外地在 Web 浏览器（Applet）中火了起来。近 30 年过去，Java 不仅没有像许多"潮流语言"那样昙花一现，反而稳居 TIOBE 编程语言排行榜前 3 名。
-
 Java 既是一门**编程语言**，也是一个**生态平台**：
 
 - **作为语言**：面向对象、静态类型、语法接近 C++ 但去掉了指针、手动内存管理和多重继承等最让人头疼的部分。
@@ -139,7 +137,6 @@ Java 不是纯粹的编译型语言，也不是纯粹的解释型语言——后
 
 ## 二、⭐️ 一次编译，到处运行
 
-> 1995 年，Sun 公司打出 **"Write Once, Run Anywhere"** 的口号，震撼了整个软件行业。
 
 ### 2.1 为什么 Java 能做到跨平台？
 
@@ -163,21 +160,6 @@ Java 走了完全不同的路线：
 
 **关键创新在于字节码（Bytecode）**：一种介于 Java 源码和机器码之间的"中间语言"。它不属于任何特定的 CPU 或操作系统，而是定义在 JVM 规范中的一套标准指令集。
 
-你可以亲手验证这个过程：
-
-```bash
-# 1. 创建 Hello.java
-echo 'public class Hello { public static void main(String[] args) { System.out.println("Hello from bytecode!"); } }' > Hello.java
-
-# 2. 编译成字节码
-javac Hello.java       # 生成 Hello.class
-
-# 3. 查看字节码（反编译）
-javap -c Hello         # 你会看到 aload_0、invokevirtual 等 JVM 指令
-
-# 4. 把 Hello.class 复制到任何安装了 JVM 的机器上，都能直接运行
-java Hello
-```
 
 ### 2.2 跨平台还是 Java 最大的优势吗？
 
@@ -201,7 +183,6 @@ java Hello
 
 ## 三、⭐️ JVM、JDK、JRE 的关系
 
-这是 Java 新手最容易混淆的三个概念。不搞清楚，连该装什么都弄不明白。
 
 ### 3.1 JVM（Java Virtual Machine）
 
@@ -296,7 +277,7 @@ JDK = JRE + 开发工具
 
 > 面试中有一个经典问题：**"Java 是编译型语言还是解释型语言？"**
 >
-> 正确答案是：**两者都是**。
+> 答案是：**两者都是**。
 
 ### 4.1 Java 程序的执行过程详解
 
@@ -379,17 +360,12 @@ Java SE（地基）          Java EE（大楼）
 │ JVM         │  ──▶   │ JPA      ── 数据库映射    │
 │ 基础工具     │         │ JMS      ── 消息队列     │
 │ 集合框架     │         │ JTA      ── 分布式事务   │
-│ IO/网络      │         │ CDI      ── 依赖注入     │
+│ IO/网络      │         │ DI      ── 依赖注入     │
 │ 并发编程     │         │ Bean Validation ── 校验  │
 └─────────────┘         └─────────────────────────┘
 ```
 
-Java EE 不是具体的软件，而是一套**规范（Specification）**。不同的厂商（Oracle、Red Hat、Apache 等）提供各自的实现：
-- **GlassFish**：Oracle 的参考实现
-- **WildFly**（前身 JBoss）：Red Hat 的实现
-- **Tomcat**：只实现了 Servlet 和 JSP 规范（称为"轻量级容器"或 Servlet 容器）
-
-> 🔄 **重大改名**：2017 年，Oracle 把 Java EE 捐给了 Eclipse 基金会。因为 Oracle 持有"Java"商标，Eclipse 基金会将 Java EE 改名为 **Jakarta EE**。所以你现在看到的"Jakarta EE 9/10"就是原来"Java EE 8"的延续。
+Java EE 不是具体的软件，而是一套**规范（Specification）**。不同的厂商（Oracle、Red Hat、Apache 等）提供各自的实现。
 
 ---
 
@@ -473,7 +449,7 @@ public class HelloWorld {
 | JIT vs AOT | JIT 运行时优化（启动慢、峰值快）；AOT 预编译（启动快、无运行时优化） |
 | Java SE vs EE | SE 是地基（核心类库+JVM）；EE 是企业级规范（Servlet/JPA/JMS） |
 
-下一篇我们将进入 **Java 基本语法**——注释、标识符、关键字、运算符，以及那些让你在面试中被问到的"自增自减"和"移位运算"细节。
+下一篇我们将进入 **Java 基本语法**——注释、标识符、关键字、运算符。
 
 ---
 
@@ -481,10 +457,4 @@ public class HelloWorld {
 
 - [Java SE Specifications](https://docs.oracle.com/javase/specs/) — Oracle 官方 Java SE 规范
 - [The Java Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/) — JVM 官方规范
-- [JavaGuide - Java 基础常见面试题总结(上)](https://javaguide.cn/java/basis/java-basic-questions-01.html) — 社区最优秀的 Java 面试指南
-
----
-
-> 📊 本文约 6000 字，阅读大约需要 15 分钟
->
-> *写于 2026-06-24 | 标签：Java基础、核心概念、JVM、跨平台*
+- [JavaGuide](https://javaguide.cn/java/basis/java-basic-questions-01.html) — 常看的Java知识分享社群
