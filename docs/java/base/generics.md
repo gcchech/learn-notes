@@ -123,7 +123,7 @@ public static <K, V> Map<K, V> mapOf(K key, V value) {
 
 ### 3.1 什么是类型擦除？
 
-Java 泛型通过**类型擦除（Type Erasure）**实现——编译器在编译期抹去泛型信息，生成的字节码中不包含泛型类型参数：
+Java 泛型通过 **类型擦除（Type Erasure）** 实现——编译器在编译期抹去泛型信息，生成的字节码中不包含泛型类型参数：
 
 ```java
 // 源码

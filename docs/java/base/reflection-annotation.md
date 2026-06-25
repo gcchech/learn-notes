@@ -134,8 +134,6 @@ sayHello.invoke(null);  // 输出：Hello
 // JDK 7-17：逐步优化，反射性能已接近直接调用
 // JDK 18+：MethodHandles 和 LambdaMetafactory 进一步优化
 
-// 实测建议：高频调用的场景，用 setAccessible(true) + 缓存 Method 对象
-// 不要在循环中反复 getDeclaredMethod()——它本身就有性能开销
 ```
 
 ---
