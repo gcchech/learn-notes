@@ -100,7 +100,7 @@ export default hopeTheme({
     },
     // 博客功能 (tree-shakable, 需要显式启用)
     blog: true,
-    // 本地搜索
+    // 本地搜索（下拉式）
     search: {
       locales: {
         "/": {

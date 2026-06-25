@@ -41,9 +41,178 @@ table {
   font-size: 0.9em;
 }
 
-// 移动端侧边栏改进
+// ============================================================
+// 搜索下拉框美化 —— 接近 DocSearch 弹窗质感
+// ============================================================
+
+// 搜索框容器
+.search-box {
+  margin-left: 1.25rem;
+}
+
+// 搜索输入框
+.search-box input {
+  width: 180px !important;
+  height: 2.2rem !important;
+  padding: 0 0.25rem 0 2.25rem !important;
+  border: 1.5px solid var(--vp-c-border, #e0e0e0) !important;
+  border-radius: 10px !important;
+  background: var(--vp-c-bg, #fff) url("search.svg") 0.7rem 50% no-repeat !important;
+  background-size: 1.1rem !important;
+  font-size: 0.9rem !important;
+  line-height: 2.2rem !important;
+  transition: all 0.25s ease !important;
+
+  &:focus {
+    width: 240px !important;
+    border-color: var(--theme-color, #e76f00) !important;
+    box-shadow: 0 0 0 3px rgba(231, 111, 0, 0.12) !important;
+  }
+
+  &::placeholder {
+    color: var(--vp-c-text-mute, #999);
+    opacity: 0.8;
+  }
+}
+
+// 搜索结果下拉面板
+.search-box .suggestions {
+  top: 2.6rem !important;
+  right: -0.5rem !important;
+  width: 420px !important;
+  max-height: 70vh !important;
+  padding: 0.5rem !important;
+  border: 1px solid var(--vp-c-border, #e8e8e8) !important;
+  border-radius: 12px !important;
+  background: var(--vp-c-bg, #fff) !important;
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(0, 0, 0, 0.04) !important;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-color, #e76f00) var(--vp-c-border, #eee);
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--theme-color-light, #f0a040);
+    border-radius: 3px;
+
+    &:hover {
+      background: var(--theme-color, #e76f00);
+    }
+  }
+}
+
+// 单条搜索结果
+.search-box .suggestion {
+  margin: 2px 0;
+  padding: 0.55rem 0.8rem !important;
+  border-radius: 8px !important;
+  border: 1px solid transparent;
+  line-height: 1.5 !important;
+  transition: all 0.15s ease;
+
+  a {
+    display: block;
+    color: var(--vp-c-text, #333) !important;
+    text-decoration: none !important;
+  }
+
+  &:hover,
+  &.focus {
+    background: var(--theme-color-light, #fff3e5) !important;
+    border-color: var(--theme-color, #e76f00) !important;
+    box-shadow: 0 2px 8px rgba(231, 111, 0, 0.12);
+    transform: translateX(2px);
+
+    a {
+      color: var(--theme-color, #e76f00) !important;
+    }
+  }
+}
+
+// 搜索结果标题
+.search-box .suggestion .page-title {
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+// 搜索结果路径/头部信息
+.search-box .suggestion .page-header {
+  display: inline-block;
+  margin-left: 0 !important;
+  margin-top: 0.1rem;
+  font-size: 0.78rem !important;
+  color: var(--vp-c-text-mute, #888) !important;
+  opacity: 0.8;
+}
+
+// 搜索无结果状态
+.search-box .suggestions .empty {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--vp-c-text-mute, #999);
+  font-size: 0.95rem;
+}
+
+// 搜索结果高亮匹配词
+.search-box .suggestion .highlight {
+  color: var(--theme-color, #e76f00);
+  font-weight: 600;
+  background: rgba(231, 111, 0, 0.1);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+// ============================================================
+// 移动端适配
+// ============================================================
 @media (max-width: 719px) {
   .theme-container .sidebar {
     font-size: 0.95em;
+  }
+
+  .search-box {
+    margin-left: 0.5rem;
+  }
+
+  .search-box input {
+    width: 0 !important;
+    border-color: transparent !important;
+    padding: 0 !important;
+    background-position: center !important;
+    border-radius: 50% !important;
+
+    &:focus {
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      width: calc(100% - 1rem) !important;
+      border-color: var(--theme-color, #e76f00) !important;
+      border-radius: 10px !important;
+      padding: 0 0.25rem 0 2.25rem !important;
+      background-position: 0.7rem 50% !important;
+      background-size: 1.1rem !important;
+    }
+  }
+
+  .search-box .suggestions {
+    position: fixed;
+    top: 3.5rem !important;
+    left: 0.5rem !important;
+    right: 0.5rem !important;
+    width: auto !important;
+    max-height: 60vh !important;
+    border-radius: 12px !important;
   }
 }

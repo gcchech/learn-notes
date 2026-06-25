@@ -68,18 +68,26 @@ category:
 
 ## 文章列表
 
-### 📘 Java 基础
+### 📘 Java 基础（10 篇）
 
 - [Java 核心概念](base/concept.md) — JVM/JDK/JRE、跨平台原理、编译与解释
 - [Java 基本语法](base/syntax.md) — 注释、标识符、关键字、运算符详解
-- 基本数据类型（即将更新）
-- 面向对象编程（即将更新）
+- [基本数据类型](base/datatype.md) — 8 种基本类型、包装类、装箱拆箱、BigDecimal
+- [面向对象编程](base/oop.md) — 封装、继承、多态、抽象类与接口
+- [String 深度解析](base/string.md) — 不可变性、常量池、StringBuilder
+- [异常处理](base/exception.md) — 受检/非受检异常、try-with-resources
+- [泛型](base/generics.md) — 类型擦除、通配符、PECS 原则
+- [反射与注解](base/reflection-annotation.md) — Class 对象、动态代理
+- [I/O 流](base/io.md) — 字节/字符流、装饰器模式、NIO
+- [序列化](base/serialization.md) — Serializable、transient、JSON 替代方案
 
-### 📗 集合框架
+### 📗 集合框架（5 篇）
 
-- 集合框架概览（即将更新）
-- ArrayList vs LinkedList（即将更新）
-- HashMap 深度解析（即将更新）
+- [集合框架概览](collection/overview.md) — 两大体系、Iterator、fail-fast 机制
+- [ArrayList vs LinkedList](collection/list.md) — 扩容机制、双向链表、性能对比
+- [HashSet / TreeSet / LinkedHashSet](collection/set.md) — hashCode/equals 契约、红黑树
+- [HashMap 深度解析](collection/map.md) — 1.7 vs 1.8 源码演进、红黑树化、ConcurrentHashMap
+- [Queue / Deque / BlockingQueue](collection/queue.md) — 二叉堆、循环数组、生产者-消费者
 
 ### 📙 并发编程
 
