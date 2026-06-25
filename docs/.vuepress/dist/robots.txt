@@ -1,5 +1,0 @@
-
-User-agent:*
-Disallow:
-
-Sitemap: https://learn-notes.example.com/sitemap.xml
