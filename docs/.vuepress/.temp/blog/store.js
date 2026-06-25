@@ -1,1 +1,0 @@
-export const store = ["/java/","/java/base/concept.html","/java/base/datatype.html","/java/base/exception.html","/java/base/generics.html","/java/base/io.html","/java/base/oop.html","/java/base/reflection-annotation.html","/java/base/serialization.html","/java/base/string.html","/java/base/syntax.html","/about/"];
