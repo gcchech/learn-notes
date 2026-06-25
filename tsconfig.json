@@ -11,5 +11,5 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": ["src/.vuepress/**/*.ts", "src/.vuepress/**/*.d.ts"]
+  "include": ["docs/.vuepress/**/*.ts", "docs/.vuepress/**/*.d.ts"]
 }

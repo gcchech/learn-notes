@@ -7,49 +7,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "关于",
-    "headers": [
-      {
-        "level": 2,
-        "title": "📝 简介",
-        "slug": "📝-简介",
-        "link": "#📝-简介",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "🎯 内容特色",
-        "slug": "🎯-内容特色",
-        "link": "#🎯-内容特色",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "👤 关于作者",
-        "slug": "👤-关于作者",
-        "link": "#👤-关于作者",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "📄 许可证",
-        "slug": "📄-许可证",
-        "link": "#📄-许可证",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "⚖️ 鸣谢",
-        "slug": "⚖️-鸣谢",
-        "link": "#⚖️-鸣谢",
-        "children": []
-      }
-    ],
-    "path": "/about/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "Java",
     "headers": [
       {
@@ -104,6 +61,49 @@ export const searchIndex = [
       }
     ],
     "path": "/java/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "关于",
+    "headers": [
+      {
+        "level": 2,
+        "title": "📝 简介",
+        "slug": "📝-简介",
+        "link": "#📝-简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "🎯 内容特色",
+        "slug": "🎯-内容特色",
+        "link": "#🎯-内容特色",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "👤 关于作者",
+        "slug": "👤-关于作者",
+        "link": "#👤-关于作者",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "📄 许可证",
+        "slug": "📄-许可证",
+        "link": "#📄-许可证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "⚖️ 鸣谢",
+        "slug": "⚖️-鸣谢",
+        "link": "#⚖️-鸣谢",
+        "children": []
+      }
+    ],
+    "path": "/about/",
     "pathLocale": "/",
     "extraFields": []
   },

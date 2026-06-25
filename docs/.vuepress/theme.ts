@@ -3,7 +3,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://learn-notes.example.com",
+  hostname: "https://liuzhenya.cn",
 
   // 作者信息
   author: {
