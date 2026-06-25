@@ -1,0 +1,12 @@
+# Netlify 部署配置
+# 文档：https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # 构建命令
+  command = "npm run docs:build"
+  # 构建产物目录（VuePress 默认输出到这里）
+  publish = "docs/.vuepress/dist"
+
+[build.environment]
+  # VuePress 2 + Vite 需要 Node.js 18 以上
+  NODE_VERSION = "18"
