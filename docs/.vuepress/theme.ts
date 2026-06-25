@@ -47,6 +47,9 @@ export default hopeTheme({
   footer: "Java 学习笔记 | 记录学习路上的点滴收获",
   displayFooter: true,
 
+  // 贡献者（关闭 Git 贡献者显示，避免暴露真实姓名）
+  contributors: false,
+
   // 博客配置
   blog: {
     name: "月亮",
