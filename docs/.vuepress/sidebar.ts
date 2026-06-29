@@ -40,9 +40,9 @@ export default sidebar({
       prefix: "concurrent/",
       children: [
         "basics",
-        "threadpool",
-        "juc-tools",
         "lock",
+        "juc-tools",
+        "threadpool",
         "threadlocal",
       ],
     },

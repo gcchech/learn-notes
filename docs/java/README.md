@@ -89,12 +89,28 @@ category:
 - [HashMap 深度解析](collection/map.md) — 1.7 vs 1.8 源码演进、红黑树化、ConcurrentHashMap
 - [Queue / Deque / BlockingQueue](collection/queue.md) — 二叉堆、循环数组、生产者-消费者
 
-### 📙 并发编程
+### 📙 并发编程（5 篇）
 
-- 并发基础知识（即将更新）
-- 线程池详解（即将更新）
+- [并发编程基础](concurrent/basics.md) — 线程生命周期、synchronized 锁升级、volatile、wait/notify
+- [JUC 锁机制与 AQS](concurrent/lock.md) — AQS 源码、ReentrantLock、ReadWriteLock、StampedLock
+- [JUC 工具类](concurrent/juc-tools.md) — CountDownLatch、CyclicBarrier、Semaphore、原子类
+- [线程池详解](concurrent/threadpool.md) — ThreadPoolExecutor 参数、拒绝策略、ForkJoinPool
+- [ThreadLocal 深度解析](concurrent/threadlocal.md) — ThreadLocalMap、弱引用、内存泄漏、TTL
 
-### 📕 JVM
+### 📕 JVM（4 篇）
 
 - JVM 内存结构（即将更新）
 - 垃圾回收（即将更新）
+- 类加载机制（即将更新）
+- JVM 调优实战（即将更新）
+
+### 📓 Java 新特性（2 篇）
+
+- Java 8 核心特性（即将更新）
+- Java 9~21 演进之路（即将更新）
+
+### 🛠 开发工具（3 篇）
+
+- 构建工具 Maven/Gradle（即将更新）
+- Git 高效使用指南（即将更新）
+- IntelliJ IDEA 高效开发（即将更新）
