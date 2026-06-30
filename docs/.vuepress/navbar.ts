@@ -6,5 +6,10 @@ export default navbar([
     text: "后端开发",
     icon: "java",
     link: "/java/",
-  }
+  },
+  {
+    text: "开发工具",
+    icon: "toolbox",
+    link: "/tools/",
+  },
 ]);
