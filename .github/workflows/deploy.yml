@@ -40,5 +40,5 @@ jobs:
           SOURCE: "docs/.vuepress/dist/"
           REMOTE_HOST: ${{ secrets.ECS_HOST }}
           REMOTE_USER: ${{ secrets.ECS_USERNAME }}
-          TARGET: "/var/www/learn-notes"
+          TARGET: "/www/wwwroot/learn-notes"
           EXCLUDE: "/.git/"
