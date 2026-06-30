@@ -68,6 +68,23 @@ export default sidebar({
         "java9-21",
       ],
     },
+    {
+      text: "面试宝典",
+      icon: "file-contract",
+      collapsible: true,
+      prefix: "interview/",
+      children: [
+        "mysql",
+        "jvm",
+        "collections",
+        "concurrent",
+        "spring",
+        "redis",
+        "network",
+        "distributed",
+        "scenario",
+      ],
+    },
   ],
   "/tools/": [
     {
