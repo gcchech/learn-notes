@@ -1,0 +1,44 @@
+name: Deploy to Alibaba Cloud ECS
+
+on:
+  # 推送到 master 分支时自动触发
+  push:
+    branches: [master]
+  # 支持手动触发（GitHub Actions 页面 → Run workflow）
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 安装 Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. 构建 VuePress 站点
+      - name: Build VuePress site
+        run: npm run docs:build
+
+      # 5. 通过 rsync 部署到 ECS
+      - name: Deploy to ECS
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i --delete"
+          SOURCE: "docs/.vuepress/dist/"
+          REMOTE_HOST: ${{ secrets.ECS_HOST }}
+          REMOTE_USER: ${{ secrets.ECS_USERNAME }}
+          TARGET: "/var/www/learn-notes"
+          EXCLUDE: "/.git/"
