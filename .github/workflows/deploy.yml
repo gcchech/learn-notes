@@ -14,11 +14,11 @@ jobs:
     steps:
       # 1. 检出代码
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # 2. 安装 Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "18"
           cache: "npm"
@@ -33,12 +33,12 @@ jobs:
 
       # 5. 通过 rsync 部署到 ECS
       - name: Deploy to ECS
-        uses: easingthemes/ssh-deploy@v5.1.0
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
-          SOURCE: "docs/.vuepress/dist/"
-          REMOTE_HOST: ${{ secrets.ECS_HOST }}
-          REMOTE_USER: ${{ secrets.ECS_USERNAME }}
-          TARGET: "/www/wwwroot/learn-notes"
-          EXCLUDE: "/.git/"
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.ECS_HOST }} >> ~/.ssh/known_hosts
+          rsync -rlgoDzvc -i --delete \
+            --exclude '/.git/' \
+            docs/.vuepress/dist/ \
+            ${{ secrets.ECS_USERNAME }}@${{ secrets.ECS_HOST }}:/www/wwwroot/learn-notes
