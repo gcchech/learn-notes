@@ -99,18 +99,30 @@ category:
 
 ### 📕 JVM（4 篇）
 
-- JVM 内存结构（即将更新）
-- 垃圾回收（即将更新）
-- 类加载机制（即将更新）
-- JVM 调优实战（即将更新）
+- [JVM 内存结构](jvm/memory.md) — 运行时数据区、对象创建、内存溢出排查
+- [垃圾回收](jvm/gc.md) — GC 算法、垃圾收集器、CMS/G1/ZGC 演进
+- [类加载机制](jvm/classloader.md) — 类加载器、双亲委派、SPI 机制
+- [JVM 调优实战](jvm/tuning.md) — 调优参数、调优工具、内存泄漏排查
 
 ### 📓 Java 新特性（2 篇）
 
-- Java 8 核心特性（即将更新）
-- Java 9~21 演进之路（即将更新）
+- [Java 8 核心特性](new-features/java8.md) — Lambda、Stream、Optional、新的日期时间 API
+- [Java 9~21 演进之路](new-features/java9-21.md) — 模块化、var、Record、虚拟线程、模式匹配
 
 ### 🛠 开发工具（3 篇）
 
-- 构建工具 Maven/Gradle（即将更新）
-- Git 高效使用指南（即将更新）
-- IntelliJ IDEA 高效开发（即将更新）
+- [构建工具 Maven/Gradle](../../tools/build.md) — 依赖管理、插件机制、多模块构建
+- [Git 高效使用指南](../../tools/git.md) — 工作流、分支策略、rebase vs merge
+- [IntelliJ IDEA 高效开发](../../tools/idea.md) — 快捷键、调试技巧、插件推荐
+
+### 📋 面试宝典（9 篇）
+
+- [MySQL 面试高频题](interview/mysql.md) — 10 题：索引、事务、锁、分库分表
+- [JVM 面试高频题](interview/jvm.md) — 8 题：内存、GC、类加载、调优
+- [Collections 面试高频题](interview/collections.md) — 8 题：HashMap、List、Set
+- [并发编程面试高频题](interview/concurrent.md) — 8 题：锁升级、AQS、线程池、ThreadLocal
+- [Spring 面试高频题](interview/spring.md) — 10 题：IoC、AOP、事务、自动配置
+- [Redis 面试高频题](interview/redis.md) — 10 题：数据结构、缓存、持久化、集群
+- [计算机网络面试高频题](interview/network.md) — 10 题：TCP、HTTP、HTTPS、跨域
+- [分布式系统面试高频题](interview/distributed.md) — 10 题：CAP、分布式事务、分布式 ID
+- [场景设计题](interview/scenario.md) — 8 题：短链、秒杀、排行榜、海量数据

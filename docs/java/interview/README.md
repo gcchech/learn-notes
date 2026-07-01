@@ -27,8 +27,8 @@ tag:
 
 <Catalog />
 
-## 后续计划
+## 当前进度
 
+- ✅ **已完成 9 大主题**：MySQL(10题)、JVM(8题)、Collections(8题)、Concurrent(8题)、Spring(10题)、Redis(10题)、网络(10题)、分布式(10题)、场景设计(8题)
 - :writing_hand: **持续更新**：根据真实面试经历补充新题和场景题
 - :bulb: **真实面经**：`realworld.md` 将沉淀真实面试中遇到的非标问题和追问思路
-- :rocket: **Spring / Redis / 分布式 / 场景设计**：待后续按需扩充
