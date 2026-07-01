@@ -85,6 +85,20 @@ export default sidebar({
         "scenario",
       ],
     },
+    {
+      text: "源码解析",
+      icon: "code",
+      collapsible: true,
+      prefix: "source-code/",
+      children: [
+        "spring-ioc",
+        "spring-aop",
+        "springmvc",
+        "mybatis",
+        "mysql-arch",
+        "springboot",
+      ],
+    },
   ],
   "/tools/": [
     {

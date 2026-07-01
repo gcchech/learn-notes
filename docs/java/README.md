@@ -18,7 +18,7 @@ category:
 ## 学习路线
 
 <div style="overflow-x:auto;padding:16px 0;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 80" width="100%" style="max-width:960px;min-width:700px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 80" width="100%" style="max-width:1120px;min-width:700px;">
   <defs>
     <linearGradient id="box" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#e76f00;stop-opacity:0.12"/>
@@ -29,32 +29,38 @@ category:
     </filter>
   </defs>
   <!-- 节点 1: Java 基础 -->
-  <rect x="0" y="10" width="150" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
-  <text x="75" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">☕ Java 基础</text>
+  <rect x="0" y="10" width="140" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="70" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">☕ Java 基础</text>
   <!-- 箭头 1→2 -->
-  <line x1="155" y1="38" x2="215" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
-  <polygon points="215,32 225,38 215,44" fill="#e76f00"/>
+  <line x1="145" y1="38" x2="205" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <polygon points="205,32 215,38 205,44" fill="#e76f00"/>
   <!-- 节点 2: 集合框架 -->
-  <rect x="230" y="10" width="150" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
-  <text x="305" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">📦 集合框架</text>
+  <rect x="220" y="10" width="140" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="290" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">📦 集合框架</text>
   <!-- 箭头 2→3 -->
-  <line x1="385" y1="38" x2="445" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
-  <polygon points="445,32 455,38 445,44" fill="#e76f00"/>
+  <line x1="365" y1="38" x2="425" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <polygon points="425,32 435,38 425,44" fill="#e76f00"/>
   <!-- 节点 3: 并发编程 -->
-  <rect x="460" y="10" width="150" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
-  <text x="535" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">⚡ 并发编程</text>
+  <rect x="440" y="10" width="140" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="510" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">⚡ 并发编程</text>
   <!-- 箭头 3→4 -->
-  <line x1="615" y1="38" x2="675" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
-  <polygon points="675,32 685,38 675,44" fill="#e76f00"/>
+  <line x1="585" y1="38" x2="645" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <polygon points="645,32 655,38 645,44" fill="#e76f00"/>
   <!-- 节点 4: JVM 原理 -->
-  <rect x="690" y="10" width="130" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
-  <text x="755" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">💻 JVM 原理</text>
+  <rect x="660" y="10" width="130" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">💻 JVM 原理</text>
   <!-- 箭头 4→5 -->
-  <line x1="825" y1="38" x2="875" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
-  <polygon points="875,32 885,38 875,44" fill="#e76f00"/>
+  <line x1="795" y1="38" x2="845" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <polygon points="845,32 855,38 845,44" fill="#e76f00"/>
   <!-- 节点 5: Java 新特性 -->
-  <rect x="830" y="10" width="130" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
-  <text x="895" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">✨ 新特性</text>
+  <rect x="800" y="10" width="130" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="865" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">✨ 新特性</text>
+  <!-- 箭头 5→6 -->
+  <line x1="935" y1="38" x2="985" y2="38" stroke="#e76f00" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <polygon points="985,32 995,38 985,44" fill="#e76f00"/>
+  <!-- 节点 6: 源码解析 -->
+  <rect x="940" y="10" width="140" height="56" rx="10" fill="url(#box)" stroke="#e76f00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1010" y="44" text-anchor="middle" fill="currentColor" font-size="15" font-weight="bold" font-family="system-ui,sans-serif">🔬 源码解析</text>
 </svg>
 </div>
 
@@ -65,6 +71,7 @@ category:
 3. **并发编程** —— 线程池、锁机制、JUC 工具类
 4. **JVM 原理** —— 内存结构、GC、类加载
 5. **Java 新特性** —— Lambda/Stream、模块系统、虚拟线程
+6. **源码解析** —— Spring IoC/AOP、SpringMVC、MyBatis、MySQL、Spring Boot 源码深度剖析
 
 ## 文章列表
 
@@ -126,3 +133,12 @@ category:
 - [计算机网络面试高频题](interview/network.md) — 10 题：TCP、HTTP、HTTPS、跨域
 - [分布式系统面试高频题](interview/distributed.md) — 10 题：CAP、分布式事务、分布式 ID
 - [场景设计题](interview/scenario.md) — 8 题：短链、秒杀、排行榜、海量数据
+
+### 🔬 源码解析（6 篇）
+
+- [Spring IoC 容器源码解析](source-code/spring-ioc.md) — Bean 生命周期、三级缓存、循环依赖、依赖注入
+- [Spring AOP 源码解析](source-code/spring-aop.md) — JDK/CGLIB 代理、拦截器链、@Transactional 原理
+- [SpringMVC 请求处理源码解析](source-code/springmvc.md) — DispatcherServlet、参数解析、返回值处理
+- [MyBatis 源码解析](source-code/mybatis.md) — Mapper 代理、Executor、插件机制、两级缓存
+- [MySQL 架构与 InnoDB 存储引擎源码解析](source-code/mysql-arch.md) — B+ 树、MVCC、Undo/Redo Log、锁机制、Buffer Pool
+- [Spring Boot 自动配置源码解析](source-code/springboot.md) — @EnableAutoConfiguration、@Conditional、内嵌 Tomcat、启动流程
