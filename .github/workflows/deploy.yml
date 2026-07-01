@@ -42,5 +42,6 @@ jobs:
             "mkdir -p /www/wwwroot/learn-notes && chmod -R u+w /www/wwwroot/learn-notes 2>/dev/null; exit 0"
           rsync -rzv --delete --force --no-perms --no-owner --no-group --no-times \
             --exclude '/.git/' \
+            --exclude '/.user.ini' \
             docs/.vuepress/dist/ \
             ${{ secrets.ECS_USERNAME }}@${{ secrets.ECS_HOST }}:/www/wwwroot/learn-notes
