@@ -38,7 +38,7 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.ECS_HOST }} >> ~/.ssh/known_hosts
-          rsync -rlgoDzvc -i --delete \
+          rsync -rlDzvc -i --delete \
             --exclude '/.git/' \
             docs/.vuepress/dist/ \
             ${{ secrets.ECS_USERNAME }}@${{ secrets.ECS_HOST }}:/www/wwwroot/learn-notes
